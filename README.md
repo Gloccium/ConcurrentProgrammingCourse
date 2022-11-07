@@ -1,1 +1,3 @@
 # ConcurrentProgrammingCourse
+
+Репозиторий с домашками

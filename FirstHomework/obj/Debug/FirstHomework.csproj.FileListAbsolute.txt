@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\bin\Debug\FirstHomework.exe
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\bin\Debug\FirstHomework.pdb
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\obj\Debug\FirstHomework.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\obj\Debug\FirstHomework.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\obj\Debug\FirstHomework.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\obj\Debug\FirstHomework.exe
+C:\Users\User\Documents\GitHub\ConcurrentProgrammingCourse\FirstHomework\obj\Debug\FirstHomework.pdb

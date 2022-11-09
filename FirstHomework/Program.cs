@@ -19,7 +19,7 @@ namespace FirstHomework
 
             const int dataCapacity = 10;
             var data = new List<long>(dataCapacity);
-            
+
             MeasureTime(data);
             Console.WriteLine($"The average time is: {data.Average()}");
         }
@@ -30,7 +30,13 @@ namespace FirstHomework
             {
                 _stopwatch = new Stopwatch();
 
-                var firstThread = new Thread(() => {_stopwatch.Start(); while (_stopwatch.IsRunning) { } })
+                var firstThread = new Thread(() =>
+                {
+                    _stopwatch.Start();
+                    while (_stopwatch.IsRunning)
+                    {
+                    }
+                })
                 {
                     IsBackground = true,
                     Priority = ThreadPriority.Normal,

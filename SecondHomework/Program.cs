@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -17,32 +18,33 @@ namespace SecondHomework
         public IDisposable AcquireLock(params string[] keys);
     }
 
-    public class StringWrapper
-    {
-        public string String { get; }
-        public StringWrapper(string @string) => String = @string;
-    }
-
     public class MultiLock : IMultiLock
     {
-        private readonly Dictionary<string, StringWrapper> _stringWrappers = new();
+        private readonly ConcurrentDictionary<string, object> _objects = new();
 
         public IDisposable AcquireLock(params string[] keys)
         {
-            lock (_stringWrappers)
+            lock (_objects)
                 foreach (var key in keys)
-                    if (!_stringWrappers.ContainsKey(key))
-                        _stringWrappers[key] = new StringWrapper(key);
+                    if (!_objects.ContainsKey(key))
+                        _objects[key] = key;
 
             var blockedObjects = keys
-                .Select(e => _stringWrappers[e])
-                .OrderBy(e => e.String)
+                .Select(e => _objects[e])
+                .OrderBy(e => e.ToString())
                 .ToArray();
 
             var disposable = new Disposable(blockedObjects);
 
             foreach (var blockedObject in blockedObjects)
-                Monitor.Enter(blockedObject);
+                try
+                {
+                    Monitor.Enter(blockedObject);
+                }
+                catch (ThreadAbortException)
+                {
+                    Monitor.Exit(blockedObject);
+                }
 
             return disposable;
         }
@@ -50,9 +52,9 @@ namespace SecondHomework
 
     public class Disposable : IDisposable
     {
-        private readonly StringWrapper[] _blockedObjects;
+        private readonly object[] _blockedObjects;
 
-        public Disposable(IEnumerable<StringWrapper> blockedObjects) => _blockedObjects = blockedObjects.ToArray();
+        public Disposable(IEnumerable<object> blockedObjects) => _blockedObjects = blockedObjects.ToArray();
 
         public void Dispose()
         {

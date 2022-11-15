@@ -8,21 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a18a8e-0137-43b1-8a0b-9f0fb0da825d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../FirstHomework/bin/Debug/FirstHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstHomework/bin/Debug/FirstHomework.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstHomework/bin/Debug/FirstHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstHomework/bin/Debug/FirstHomework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstHomework/obj/Debug/FirstHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstHomework/obj/Debug/FirstHomework.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstHomework/obj/Debug/FirstHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstHomework/obj/Debug/FirstHomework.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondHomework.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SecondHomework.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SecondHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SecondHomework.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SecondHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SecondHomework.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SecondHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SecondHomework.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Desktop/Program (2).cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,18 +29,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="SecondHomework" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -74,7 +70,11 @@
       <option name="presentableId" value="Default" />
       <updated>1667828327079</updated>
       <workItem from="1667828329187" duration="5000" />
-      <workItem from="1668252585380" duration="1465000" />
+      <workItem from="1668252585380" duration="2302000" />
+      <workItem from="1668351850205" duration="385000" />
+      <workItem from="1668475442313" duration="645000" />
+      <workItem from="1668476134017" duration="1276000" />
+      <workItem from="1668485363277" duration="1136000" />
     </task>
     <servers />
   </component>

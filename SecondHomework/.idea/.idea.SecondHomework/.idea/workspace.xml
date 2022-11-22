@@ -8,6 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a18a8e-0137-43b1-8a0b-9f0fb0da825d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdHomework/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThirdHomework/obj/Debug/ThirdHomework.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" afterDir="false" />
@@ -74,7 +79,8 @@
       <workItem from="1668351850205" duration="385000" />
       <workItem from="1668475442313" duration="645000" />
       <workItem from="1668476134017" duration="1276000" />
-      <workItem from="1668485363277" duration="1136000" />
+      <workItem from="1668485363277" duration="1363000" />
+      <workItem from="1669149021981" duration="1500000" />
     </task>
     <servers />
   </component>

@@ -22,14 +22,17 @@ namespace SecondHomework
     {
         private readonly Dictionary<string, object> _objects = new();
 
-        public IDisposable AcquireLock(params string[] keys)
+        public MultiLock(params string[] keys)
         {
             foreach (var key in keys)
             {
-                if (!_objects.ContainsKey(key))
+                if(!_objects.ContainsKey(key))
                     _objects[key] = new object();
             }
+        }
 
+        public IDisposable AcquireLock(params string[] keys)
+        {
             Array.Sort(keys);
 
             try

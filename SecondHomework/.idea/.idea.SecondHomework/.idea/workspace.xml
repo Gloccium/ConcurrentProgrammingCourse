@@ -8,17 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2a18a8e-0137-43b1-8a0b-9f0fb0da825d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdHomework/.idea/.idea.ThirdHomework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdHomework/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThirdHomework/obj/Debug/ThirdHomework.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SecondHomework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SecondHomework.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/SecondHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SecondHomework.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/SecondHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SecondHomework.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/SecondHomework.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SecondHomework.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +72,8 @@
       <workItem from="1668476134017" duration="1276000" />
       <workItem from="1668485363277" duration="1363000" />
       <workItem from="1669149021981" duration="1500000" />
+      <workItem from="1669560590407" duration="593000" />
+      <workItem from="1670152551067" duration="784000" />
     </task>
     <servers />
   </component>

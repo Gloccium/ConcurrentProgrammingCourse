@@ -24,35 +24,30 @@ namespace SecondHomework
 
         public IDisposable AcquireLock(params string[] keys)
         {
-            Array.Sort(keys);
-            var blockedObjects = new List<object>();
-            
-            lock (_objects)
-                foreach (var key in keys)
-                {
-                    if (!_objects.ContainsKey(key))
-                        _objects[key] = new object();
-                    
-                    blockedObjects.Add(_objects[key]);
-                }
-
-            foreach (var blockedObject in blockedObjects)
+            foreach (var key in keys)
             {
-                try
-                {
-                    Monitor.Enter(blockedObject);
-                }
-                
-                catch(Exception e)
-                {
-                    if (Monitor.IsEntered(blockedObject))
-                        Monitor.Exit(blockedObject);
-                    
-                    throw new Exception($"{e}");
-                }
+                if (!_objects.ContainsKey(key))
+                    _objects[key] = new object();
             }
 
-            return new Disposable(blockedObjects);
+            Array.Sort(keys);
+
+            try
+            {
+                foreach (var key in keys)
+                    Monitor.Enter(_objects[key]);
+
+                return new Disposable(keys.Reverse());
+            }
+
+            catch (Exception)
+            {
+                foreach (var key in keys.Reverse())
+                    if (Monitor.IsEntered(_objects[key]))
+                        Monitor.Exit(key);
+                
+                throw;
+            }
         }
     }
 
@@ -68,8 +63,7 @@ namespace SecondHomework
         public void Dispose()
         {
             foreach (var obj in _blockedObjects)
-                if (Monitor.IsEntered(obj))
-                    Monitor.Exit(obj);
+                Monitor.Exit(obj);
         }
     }
 }

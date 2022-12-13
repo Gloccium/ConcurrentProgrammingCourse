@@ -1,0 +1,5 @@
+C:\Users\User\Desktop\CustomThreadPool\obj\Debug\netcoreapp3.1\CustomThreadPool.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\CustomThreadPool\obj\Debug\netcoreapp3.1\CustomThreadPool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\CustomThreadPool\obj\Debug\netcoreapp3.1\CustomThreadPool.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\CustomThreadPool\obj\Debug\netcoreapp3.1\CustomThreadPool.AssemblyInfo.cs
+C:\Users\User\Desktop\CustomThreadPool\obj\Debug\netcoreapp3.1\CustomThreadPool.csproj.CoreCompileInputs.cache

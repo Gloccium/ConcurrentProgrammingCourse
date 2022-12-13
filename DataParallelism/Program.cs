@@ -30,7 +30,7 @@ namespace DataParallelismTask
                 .ToArray();
         }
     }
-    
+
     public class ParallelParser : ILogParser
     {
         private readonly FileInfo _fileInfo;
@@ -45,15 +45,15 @@ namespace DataParallelismTask
         public string[] ExtractIds()
         {
             var fileLines = File.ReadLines(_fileInfo.FullName);
-            var concurBag = new ConcurrentBag<string>();
+            var concurrentBag = new ConcurrentBag<string>();
             Parallel.ForEach(fileLines, n =>
             {
-                if (_getId(n) is { } id) concurBag.Add(id);
+                if (_getId(n) is { } id) concurrentBag.Add(id);
             });
-            return concurBag.ToArray();
+            return concurrentBag.ToArray();
         }
     }
-    
+
     public class ThreadParser : ILogParser
     {
         private readonly FileInfo _fileInfo;
@@ -68,19 +68,19 @@ namespace DataParallelismTask
         public string[] ExtractIds()
         {
             var threads = new Thread[Environment.ProcessorCount * 3];
-            var concurStack = new ConcurrentStack<string>(File.ReadLines(_fileInfo.FullName));
-            var concurBag = new ConcurrentBag<string>();
+            var concurrentStack = new ConcurrentStack<string>(File.ReadLines(_fileInfo.FullName));
+            var concurrentBag = new ConcurrentBag<string>();
 
             for (var i = 0; i < threads.Length; i++)
             {
-                var thread = MakeThread(concurStack, concurBag);
-                
+                var thread = MakeThread(concurrentStack, concurrentBag);
+
                 thread.Start();
                 threads[i] = thread;
             }
 
             JoinThreads(threads);
-            return concurBag.ToArray();
+            return concurrentBag.ToArray();
         }
 
         private static void JoinThreads(IEnumerable<Thread> threads)
@@ -89,15 +89,15 @@ namespace DataParallelismTask
                 thread.Join();
         }
 
-        private Thread MakeThread(ConcurrentStack<string> concurStack, ConcurrentBag<string> concurBag)
+        private Thread MakeThread(ConcurrentStack<string> concurrentStack, ConcurrentBag<string> concurrentBag)
         {
             var thread = new Thread(start: () =>
             {
-                while (concurStack.TryPop(out var result))
+                while (concurrentStack.TryPop(out var temp))
                 {
-                    var id = _getId(result);
+                    var id = _getId(temp);
                     if (id != null)
-                        concurBag.Add(id);
+                        concurrentBag.Add(id);
                 }
             });
             return thread;
